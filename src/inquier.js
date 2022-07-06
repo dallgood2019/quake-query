@@ -21,6 +21,7 @@ module.exports = {
     return inquirer.prompt(questions);
   },
   askForCode: () => {
+    // allow input of numbers/letters only
     const reg = new RegExp("^[a-zA-Z0-9_]+$")
 
     const questions = [

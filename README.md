@@ -14,10 +14,16 @@ Pull Docker image:
 docker pull dylanallgood/earthquake-app:quake
 ```
 
+Copy the image id for the next command.
+
+```bash
+docker images
+```
+
 Because the app is waiting for some input, start the container using:
 
 ```bash
-docker run -it --rm quake
+docker run -it --rm [imageID]
 ```
 
 ...that way stdin and stderr will forward to your terminal.
